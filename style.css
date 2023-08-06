@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --btn-clr: #3cc68a;
+    --p-clr:#0F2137;
+    --h-clr:#02073E;
+    --heading-font:'Bree Serif', serif;
+    --p-font:'DM Sans', sans-serif;
+}
+
+
+
+.btn-primary{
+    background: var(--btn-clr);
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: #fff !important;
+}
+
+.bag{
+    background: #28A5FF;
+    color: #fff;
+    font-size: 13px;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    padding: 20px 10%;
+}
+
+.row{
+    display: flex;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+.section-padding{
+    padding: 100px 0;
+}
+
+span{
+    color: #00A99D;
+}
+
+.section-header h4{
+    color: #00A99D;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom:5px;
+    text-align: center;
+}
+
+.section-header{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-header h2{
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #0f2137;
+    font-size: 35px;
+}
+
+
+/*----------------------Navbar css design---------------------------*/
+.navbar{
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+}
+
+nav ul{
+    display: flex;
+}
+
+
+ nav ul li{
+    margin: 4px;
+}
+
+.nav-link{
+    color: var(--h-clr);
+    font-size: 18px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+    font-family: var(--p-font);
+}
+
+.nav-link::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: var(--btn-clr);
+    top: 40px;
+    transition: all 0.3s linear;
+    transform-origin: center;
+}
+
+
+.nav-link:hover::before{
+    width: 100%;
+    
+}
+.fa-bars{
+    font-size: 25px;
+    color: var(--h-clr);
+    display: none;
+}
+
+.rightmenu a{
+    color: black;
+    margin-left: 16px;
+    font-size:18px;
+    display:inline-block;
+}
+
+.rightmenu a img{
+    margin-right: 10px;
+    padding-top: 5px;
+}
+
+/*----------------------Header css design---------------------------*/
+
+
+.header{
+    background: #F9FBFD;
+    height: 100vh;
+}
+.header .header-text h1{
+    color: var(--h-clr);
+    font-family: var(--heading-font);
+    margin-bottom: 15px;
+    font-size: 55px;
+    font-weight: 900;
+    font-family: serif;
+    line-height: 1.2;
+}
+
+.header .header-text>p{
+    color: var(--h-clr);
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    font-family: var(--p-font);
+    font-weight: 400;
+}
+
+form{
+    margin-bottom: 20px;
+}
+
+.header .header-text input{
+    margin-right: 10px;
+    padding: 15px 20px;
+    outline: none;
+    border: solid 1px #E9EDF5;
+    border-radius: 8px;
+    width: 60%;
+}
+
+.header-text input::placeholder{
+    font-size: 16px;
+}
+
+.header-img img{
+    width: 100%;
+    max-width: 450px;
+}
+.col-2{
+    width: 46%;
+}
+
+.submit-btn{
+    width: 30% !important;
+    border: none;
+    cursor: pointer;
+}
+
+
+.sponser{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.sponser p{
+    margin-right: 20px;
+    font-size: 22px;
+    color: #566272;
+}
+.sponser img{
+    margin-right: 20px;
+    max-width: 100px !important;
+    width: 100%;
+    margin: auto;
+}
+/*----------------------Services css design---------------------------*/
+.singel-service{
+    display: flex;
+}
+
+.singel-service .service-img{
+    margin-right: 10px;
+}
+.singel-service .service-img img{
+    width: 60px;
+}
+
+.service-text h4{
+    color: #0F2137;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--p-font);
+    margin-bottom: 8px;
+}
+.service-text p{
+    color: #343D48;
+    font-size: 16px;
+    font-family: var(--p-font);
+    line-height: 1.9;
+
+}
+.services .col-3{
+    background: #fff;
+    width: 33%;
+    padding: 10px 20px;
+}
+/*----------------------Mockup css design---------------------------*/
+.mockup .col-2{
+    margin-right: 20px;
+}
+
+.mockup img{
+    max-width: 1020px;
+    width: 100%;
+}
+.right-text h4{
+    font-size: 16px;
+    font-weight: 400;
+}
+.right-text h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #0F2137;
+    cursor: pointer;
+}
+
+.right-text p{
+    font-size: 16px;
+    color: #343D48;
+    line-height: 1.6;
+}
+
+.acrodion{
+    /* padding: 20px 0; */
+    margin-bottom: 10px;
+}
+
+.acrodion-item{
+    background: #F6F8FB;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.acrodion-item p{
+    display: none;
+}
+.acrodion-item .fa-plus{
+    padding-left: 100px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+/*----------------------Future css design---------------------------*/
+.future{
+    background: #F9FAFC;
+}
+
+
+.future .col-3{
+    width: 33.33%;
+    margin: 10px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px 0;
+    border-radius: 8px;
+}
+
+.singel-future{
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+
+.future-icon{
+    margin: 20px;
+}
+
+.future-icon img{
+    width: 40px;
+    height: 40px;
+    
+}
+
+.future-text h4{
+    font-size: 18px;
+    color: #0F2137;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.future-text p{
+    font-size: 16px;
+    color: #343D48;
+    font-weight: 400;
+    line-height: 1.9;
+    margin-bottom: 10px;
+}
+
+.future-text .bag{
+    margin-left: 10px;
+    padding: 4px 8px;
+    border-radius: 20px;
+}
+
+.future a{
+    color: #3183FF;
+    font-size: 16px;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.future a i{
+    margin-left: 10px;
+}
+
