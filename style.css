@@ -7,10 +7,110 @@
     font-family: sans-serif;
 }
 
+ul li{
+    list-style: none !important;
+}
+
+
+.btn-primary{
+    background: var(--btn-clr);
+    border: 0;
+}
+.btn-primary:hover{
+    background: var(--btn-clr);
+}
+
 :root{
     --btn-clr: #3cc68a;
     --p-clr:#0F2137;
     --h-clr:#02073E;
     --heading-font:'Bree Serif', serif;
     --p-font:'DM Sans', sans-serif;
+}
+
+/* --------------------------------Hero Section Css----------------------------- */
+.navbar{
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+.home{
+    background-color: #F9FBFD;
+
+}
+.section-padding{
+    padding: 100px 0;
+}
+
+.section-header{
+    margin-bottom: 60px;
+}
+.nav-link{
+    color: var(--h-clr) !important;
+}
+
+.home .text-area h1{
+    font-size: 55px;
+    font-family: var(--heading-font);
+}
+
+.home .text-area p{
+    font-size: 16px;
+    font-family: var(--p-font);
+    color: var(--p-clr);
+}
+
+.home input{
+    width: 70%;
+    max-width: 450px;
+    margin: 10px;
+    border: 1px solid #E9EDF5 !important;
+    outline: none;
+}
+.home input[type="submit"]{
+    width: 20%;
+    max-width: 140px;
+    margin: 10px;
+}
+
+.sponser span img{
+    max-width: 220px;
+    width: 100%;
+}
+
+.sponser span label{
+    font-size: 22px;
+    color: #0F2137;
+}
+
+.img-area img{
+    max-width: 500px;
+    width: 100%;
+}
+
+/* --------------------------------Services section css elements----------------------------- */
+
+span{
+    color: #00a99d;
+    font-family: var(--p-font);
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.section-header h2{
+    color: var(--h-clr);
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: var(--heading-font);
+}
+
+.singel-service h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--p-font);
+}
+.singel-service p{
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4;
 }
